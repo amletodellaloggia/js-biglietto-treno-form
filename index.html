@@ -2,37 +2,41 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
-  <title>js-biglietto-treno-form</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+	<title>js-biglietto-treno-form</title>
 </head>
 
 <body>
-  <form>
-    <label for="">Nome:</label>
-    <input type="text" id="name" name="nome">
-    <label for="">Cognome:</label>
-    <input type="text" id="surname" name="cognome">
-    <label for="">Età:</label>
-    <input type="text" id="age" name="age">
-    <label for="">KM:</label>
-    <input type="text" id="km" name="km">
-    <button type="submit" id="send" class="btn btn-primary">Invia</button>
-  </form>
-
-  <hr>
-
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <div id="result">
+	<div class="container">
+		<div class="row">
+			<h4>Benvenut3 ! Calcola il prezzo del tuo biglietto Boolean Railways !</h4>
+			<div class="col-12 col-md-8">
+				<input type="text" id="name" name="nome" placeholder="Nome">
+				<input type="text" id="surname" name="cognome" placeholder="Cognome">
+			</div>
+			<div class="col-12 col-md-8">
+				<input type="text" id="age" name="age" placeholder="Età">
+				<input type="text" id="km" name="km" placeholder="KM">
+				</form>
+			</div>
+			<div class="col-12 col-md-8">
+				<button type="submit" id="send" class="btn btn-primary">Invia</button>
+			</div>
 		</div>
-      </div>
-    </div>
-  </div>
+	</div>
+	<form>
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-md-4">
+					<div id="result">
+					</div>
+				</div>
+			</div>
+		</div>
 
-  <script src="./js/script.js"></script>
+		<script src="./js/script.js"></script>
 </body>
 
 </html>
