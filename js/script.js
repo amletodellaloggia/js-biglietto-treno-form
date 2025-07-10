@@ -24,9 +24,19 @@ button.addEventListener(`click`, function (e) {
 
   // INSERISCO IN HTML passengerName, passengerSurname, finalCost (fixato per il decimale)
   document.getElementById("result").innerHTML = `
-  <h4>Riepilogo Biglietto</h4>
-    <p><strong>Nome:</strong> ${passengerName}</p>
-    <p><strong>Cognome:</strong> ${passengerSurname}</p>
-    <p><strong>Costo del biglietto:</strong> € ${finalCost.toFixed(2)}</p>
+  <div class="card text-bg-primary mb-3" style="max-width: 18rem;">
+  <div class="card-header"><h4>Riepilogo Biglietto</h4></div>
+  <div class="card-body">
+    <p class="card-text">
+      <strong>Nome:</strong> ${passengerName}
+    </p>
+    <p class="card-text">
+      <strong>Cognome:</strong> ${passengerSurname}
+    </p>
+    <p class="card-text">
+      <strong>Costo del biglietto:</strong> € ${finalCost.toFixed(2)}
+    </p>
+  </div>
+</div>
   `;
 });
